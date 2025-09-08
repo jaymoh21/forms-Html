@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+</head>
+<body>
+    <header>
+        <h1>User registration Form</h1>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <!-- personal information -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+                <br><br>
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+                <br><br>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="1">
+                <br><br>
+                <label>Gender:</label>
+                <label>
+                    <input type="radio" name="gender" value="male"> Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female"> Female
+                </label>
+                <br><br>
+                <label for="photo">Profile Photo:</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+            </fieldset>
+
+            <!-- contact & address information -->
+            <fieldset>
+                <legend>Contact & Address Information</legend>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" >
+                <br><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" >
+                <br><br>
+                <label for="website">Website:</label>
+                <input type="url" id="website" name="website" placeholder="https://github.com/jaymoh21">
+                <br><br>
+                <label for="adress">Street Address:</label>
+                <input type="text" id="adress" name="adress" >
+                <br><br>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" >
+                <br><br>
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" >
+                <br><br>
+                <label for="zip">Zip/Postal Code:</label>
+                <input type="text" id="zip" name="zip">
+                <br><br>
+                <label for="Contact-time">Preferred Contact Time:</label>
+                <input type="time" id="Contact-time" name="Contact-time">
+            </fieldset>
+
+            <!-- preferences & interests -->
+            <fieldset>
+                <legend>Preferences & Interests</legend>
+                <label for="color">Favorite Color:</label>
+                <input type="color" id="color" name="color" value="#000000">
+                <br><br>
+                <label for="experience">Experience Level (1-10):</label>
+                <input type="range" id="experience" name="experience" min="1" max="10" value="5">
+                <br><br>
+                <label for="Birth-month">Birth Month:</label>
+                <input type="month" id="Birth-month" name="Birth-month">
+                <br><br>
+                <label for="availability">Availability:</label>
+                <input type="week" id="availability" name="availability">
+                <br><br>
+                <label for="keywords">Keywords:</label>
+                <input type="search" id="keywords" name="keywords">
+                <br><br>
+                <label>Interests (select all that apply):</label><br>
+                <label>
+                    <input type="checkbox" name="interests" value="technology"> Technology
+                </label>
+                <label>
+                    <input type="checkbox" name="interests" value="sports"> Sports
+                </label>
+                <label>
+                    <input type="checkbox" name="interests" value="music"> Music
+                </label>
+                <label>
+                    <input type="checkbox" name="interests" value="travel"> Travel
+                </label>
+                <label>
+                    <input type="checkbox" name="interests" value="reading"> Reading
+                </label>
+                <label>
+                    <input type="checkbox" name="interests" value="cooking"> Cooking
+                </label>    
+                <label >
+                    <input type="checkbox" name="interests" value="gaming"> Gaming
+                </label>
+                <label >
+                    <input type="checkbox" name="interests" value="art"> Art
+                </label>
+                <br><br>
+                <label for="education">Education Level:</label>
+                <select id="education" name="education">
+                    <option value="">Select education level</option>
+                    <option value="high-school">High school</option>
+                    <option value="associate">Associate degree</option>
+                    <option value="bachelor">Bachelor's degree</option>
+                    <option value="master">Master's degree</option>
+                    <option value="doctorate">Doctorate</option>
+                </select>
+            </fieldset>
+
+            <!-- account security -->
+            <fieldset>
+                <legend>Account Security</legend>
+                <label for="password">Create Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br><br>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </fieldset>
+
+            <!-- feedback & additional information -->
+            <fieldset>
+                <legend>Feedback & Additional Information</legend>
+                <label for="about">Tell us about yourself:</label>
+                <textarea id="about" name="about" rows="4" cols="50" placeholder="I am a..."></textarea>
+                <br><br>
+                <label for="suggestion">Suggestion for improvement:</label>
+                <textarea id="suggestion" name="suggestion" rows="4" cols="50" placeholder="I suggest..."></textarea>
+                <br><br>
+                <label for="reg-date">Registration date and time:</label>
+                <input type="datetime-local" id="reg-date" name="reg-date">
+                <br><br>
+                <label for="hear-about">How did you hear about us?</label>
+                <select id="hear-about" name="hear-about">
+                    <option value="">Select source</option>
+                    <option value="social-media">Social media</option>
+                    <option value="friend">Friend</option>
+                    <option value="advertisement">Advertisement</option>
+                    <option value="search-engine">Search engine</option>
+                    <option value="other">Other</option>
+                </select>
+                <br><br>
+                <label for="resume">Upload resume:</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+                <br><br>
+                <label>
+                    <input type="checkbox" name="newsletter"> Subscribe to newsletter
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="terms" required> Agree to terms and conditions
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="privacy" required> I agree to privacy policy
+                </label>
+            </fieldset>
+
+            <!-- submission -->
+            <fieldset>
+                <legend>Submission</legend>
+                <button type="submit">Register</button>
+                <button type="reset">Clear Form</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; registration form project</p>
